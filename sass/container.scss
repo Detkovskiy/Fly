@@ -1,0 +1,18 @@
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media #{$tablet-widths} {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media #{$desktop-widths} {
+  .container {
+    width: 1150px;
+    margin: 0 auto;
+  }
+}

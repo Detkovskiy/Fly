@@ -1,0 +1,62 @@
+/* Цвет основных заголовков */
+$black: #000000;
+$text-color-title: $black;
+
+$main_yellow: #fdff39;
+
+/* Цвет текста абзацев */
+$text-black: #000;
+$text-white: #fff;
+
+$text-grey: #525252;
+$text-background: #efefef;
+
+/* Внутренние отступы */
+$wrapper-content: 30px 30px;
+$wrapper-content-tablet: 30px 50px;
+
+/* Цвета заголовков страниц */
+$page-title-main-color: #010000;
+$page-title-catalog-color: #000000;
+$page-title-form-color: #231f20;
+
+/* Разрешение окна браузера */
+$mobile-widths-only: (max-width: 767px);
+$tablet-widths-only: (max-width: 1149px);
+$tablet-widths: (min-width: 768px);
+$desktop-widths: (min-width: 1150px);
+$retina: ((min-resolution: 144dpi), (min-resolution: 1.5dppx));
+
+/* Сброс отступа и стиля списка */
+@mixin reset-ul {
+  padding: 0;
+  list-style: none;
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin container-fluid () {
+  width: auto;
+  @media #{$tablet-widths} {
+    width: 87%;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}

@@ -1,15 +1,103 @@
-h1 {
-  font-size: 140px;
-  color: red;
+* {
+  box-sizing: border-box;
 }
 
-div {
-  display: flex;
-  font-size: 30px;
-  color: #222222;
+@font-face {
+  font-family: "Bender-Light";
+  font-style: normal;
+  src: url("../fonts/34C7D3_0_0.woff2") format("woff2"),
+       url("../fonts/34C7D3_0_0.woff") format("woff");
 }
 
-p {
-  color: #222222;
-  display: flex;
+@font-face {
+  font-family: "Bender-Bold";
+  font-style: normal;
+  src: url("../fonts/34C7D3_0_0.woff2") format("woff2"),
+  url("../fonts/34C7D3_3_0.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bender";
+  font-style: normal;
+  src: url("../fonts/34C7D3_4_0.woff2") format("woff2"),
+  url("../fonts/34C7D3_4_0.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bender-Black";
+  font-style: normal;
+  src: url("../fonts/34C7D3_5_0.woff2") format("woff2"),
+  url("../fonts/34C7D3_5_0.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: "Roboto", sans-serif;
+  color: $text-black;
+  font-weight: 400;
+  background: #fff;
+}
+
+.tt {
+
+}
+
+fieldset {
+  margin: 0;
+}
+
+input {
+  outline: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder { font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(68, 68, 68, 0.3); }
+::-moz-placeholder          { font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(68, 68, 68, 0.3); }
+:-ms-input-placeholder      { font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(68, 68, 68, 0.3); }
+
+@media #{$tablet-widths} {
+  ::-webkit-input-placeholder { padding-left: 15px;
+    font-size: 19px;
+    line-height: 18px; }
+  ::-moz-placeholder          { padding-left: 15px;
+    font-size: 19px;
+    line-height: 18px; }
+  :-ms-input-placeholder      { padding-left: 15px;
+    font-size: 19px;
+    line-height: 18px; }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  background: url('../img/background_header.svg');
+  background-size: 50px;
+  height: 500px; // v
 }
