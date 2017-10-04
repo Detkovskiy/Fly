@@ -44,10 +44,6 @@ body {
   background: $white;
 }
 
-.tt {
-
-}
-
 fieldset {
   margin: 0;
 }
@@ -96,34 +92,17 @@ label {
   overflow: hidden;
 }
 
-.decor {
+.svg_decor {
   position: relative;
-  display: block;
+  top: 4px;
+}
+
+.decor {
+  fill: $white;
+  /*display: block;
+  height: 40px;
   width: 100%;
-
-  &::after {
-    position: relative;
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 30px 0 0 160px;
-    border-color: transparent transparent transparent $white;
-  }
-
-  &::before {
-    position: relative;
-    left: 50%;
-    bottom: -30px;
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 30px 160px;
-    border-color: transparent transparent $white transparent;
-  }
+  background: url('../img/decor_2.svg') no-repeat center;*/
 }
 
 .hidden {

@@ -1,0 +1,68 @@
+.statistics {
+  margin-top: 40px;
+}
+
+.statistics__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include reset-ul;
+}
+.statistics__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.statistics__description {
+  display: block;
+  color: #a1a1a1;
+  font-size: 16px;
+  font-family: "Bender";
+}
+
+.statistics__item {
+  margin-bottom: 30px;
+  width: 50%;
+  text-align: center;
+}
+
+.statistics__value {
+  font-size: 46px;
+  display: block;
+  font-family: "Bender-Black";
+
+  &::before {
+    position: relative;
+    top: 3px;
+    left: -9px;
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
+
+  &--one {
+    &::before {
+      background: url("../img/clock_2.svg") no-repeat center;
+    }
+  }
+
+  &--two {
+    &::before {
+      background: url("../img/youtube.svg") no-repeat center;
+    }
+  }
+
+  &--free {
+    &::before {
+      background: url("../img/anchor.svg") no-repeat center;
+    }
+  }
+
+  &--four {
+    &::before {
+      background: url("../img/clock.svg") no-repeat center;
+    }
+  }
+}

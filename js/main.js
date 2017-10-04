@@ -6,6 +6,8 @@
 //var topMenu = document.querySelector('#menu');
 var toggleMenu = document.querySelector('.menu-toggle');
 var mainMenu = document.querySelector('.main-menu');
+var window_wight = window.innerWidth;
+
 
 var openMainMenu = (function () {
   toggleMenu.addEventListener('click', function () {
@@ -29,13 +31,25 @@ var slider_left = document.getElementById('slider-left');
 var slider_items = document.getElementById('slider_items');
 var left = 0;
 
+var banner = function () {
+
+  window_wight = window.innerWidth;
+  var delta = 280;
+  if (window_wight > 400) {
+    delta = 320;
+  }
+  left = left - delta;
+  if (left < -(delta * 2) || left == -600) {
+    left = 0;
+  }
+
+  slider_items.style.left = left +'px';
+
+};
+
 var slider = (function () {
   slider_left.addEventListener('click', function () {
-    left = left - 280;
-    if (left < -560) {
-      left = 0;
-    }
-    slider_items.style.left = left +'px';
+    banner();
   });
 })();
 

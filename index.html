@@ -23,7 +23,7 @@
   <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 
 </head>
-<body>
+<body onresize="banner()">
 
 <header id="top_nav">
   <div class="container  container--header">
@@ -109,7 +109,7 @@
           <picture>
             <source media="(min-width: 1150px)" srcset="img/... 1x, img/... 2x">
             <source media="(min-width: 767px)" srcset="img/... 1x, img/... 2x,">
-            <img class="slider-item__image" src="img/inspaer@mobile.png" srcset="img/inspaer@mobile.png 2x," alt=Гексакоптер>
+            <img class="slider-item__image" src="img/inspire@1-mobile.png" srcset="img/inspire@2-mobile.png 2x," alt=Гексакоптер>
           </picture>
           <a href="#" class="slider__link  slider__link--one">подробнее...</a>
         </div>
@@ -118,7 +118,7 @@
           <picture>
             <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 767px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x,">
-            <img class="slider-item__image" src="img/copter_x8@0,25x.png" srcset="img/copter_x8@0,25x.png 2x," alt="">
+            <img class="slider-item__image" src="img/hexacopter@1-mobile.png" srcset="img/hexacopter@2-mobile.png 2x," alt="">
           </picture>
           <a href="#" class="slider__link  slider__link--one">подробнее...</a>
         </div>
@@ -128,20 +128,11 @@
           <picture>
             <source media="(min-width: 1150px)" srcset="img/... 1x, img/... 2x">
             <source media="(min-width: 767px)" srcset="img/... 1x, img/... 2x,">
-            <img class="slider-item__image" src="img/phantom@mobile.png" srcset="img/phantom@mobile.png 2x," alt=Гексакоптер>
+            <img class="slider-item__image" src="img/phantom@1-mobile.png" srcset="img/phantom@2-mobile.png 2x," alt=Гексакоптер>
           </picture>
           <a href="#" class="slider__link  slider__link--one">подробнее...</a>
         </div>
 
-        <!--<div class="slider__item">
-          <img src="img/2.jpg" alt="">
-          <a href="#" class="slider__link  slider__link&#45;&#45;two">подробнее...</a>
-        </div>
-
-        <div class="slider__item">
-          <img src="img/3.jpg" alt="">
-          <a href="#" class="slider__link  slider__link&#45;&#45;free">подробнее...</a>
-        </div>-->
       </div>
       <a id="slider-left" class="slider_control-left">
         <svg version="1.1" class="slider_control-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" xml:space="preserve">
@@ -154,9 +145,57 @@
       </a>
     </div>
   </div>
-  <span class="decor"></span>
+  <span class="svg_decor">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 320 32" xml:space="preserve">
+      <polygon id="XMLID_3_" class="decor" points="0,0 160,30 160,32.5 0,32.5 "/>
+      <polygon id="XMLID_4_" class="decor" points="320,0 160,30 160,32.5 320,32.5 "/>
+    </svg>
+  </span>
 </header>
 
+<div class="container">
+  <div class="statistics">
+    <ul class="statistics__list">
+      <li class="statistics__item">
+        <div class="statistics__wrap">
+          <span class="statistics__value  statistics__value--one">30</span>
+          <span class="statistics__description">FPS 4K ВИДЕО</span>
+        </div>
+      </li>
+
+      <li class="statistics__item">
+        <div class="statistics__wrap">
+          <span class="statistics__value  statistics__value--two">94</span>
+          <span class="statistics__description">ВИДЕО В МЕСЯЦ</span>
+        </div>
+      </li>
+
+      <li class="statistics__item">
+        <div class="statistics__wrap">
+          <span class="statistics__value  statistics__value--free">40</span>
+          <span class="statistics__description">КЛИЕНТОВ & ПАРТНЕРОВ</span>
+        </div>
+      </li>
+
+      <li class="statistics__item">
+        <div class="statistics__wrap">
+          <span class="statistics__value  statistics__value--four">62</span>
+          <span class="statistics__description">ПРОМО РОЛИКА</span>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+<div class="container  container--promo-video">
+  <h2 class="title__promo-video">Посмотри видео <span>HD</span></h2>
+  <div class="video_wrapper">
+    <video class="promo_video" controls="controls" poster="video/1.png">
+      <source src="video/test.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    </video>
+  </div>
+</div>
 <p>asdfdbnwghwefgadbwgd</p>
 <p>asdfdbnwghwefgadbwgd</p>
 <p>asdfdbnwghwefgadbwgd</p>

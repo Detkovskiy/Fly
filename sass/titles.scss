@@ -1,5 +1,29 @@
 .header_title {
-  margin-bottom: 35px;
+  margin: 10px 0 20px;
   color: $text-white;
   text-align: center;
+}
+
+.title__promo-video {
+  margin: 50px auto 40px;
+  padding: 5px 0;
+  width: 77%;
+  font-family: "Bender-Light";
+  //font-weight: bold;
+  text-align: center;
+  background-color: $main_yellow;
+}
+
+.title__promo-video span {
+  font-family: "Bender-Black";
+}
+
+@media #{$mobile-iphone_6} {
+  .header_title {
+    margin: 30px 0 40px;
+  }
+}
+
+@media #{$mobile-iphone_6_plus} {
+
 }

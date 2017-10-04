@@ -5,13 +5,17 @@
 
 .sub-menu__list {
   @include reset-ul;
+
+  & li:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 .sub-menu__social {
-  margin-top: 10px;
+  //margin-top: 10px;
   display: flex;
-  justify-content: center;
-  width: 80%;
+  //justify-content: center;
+  //width: 80%;
   font-size: 0;
 
   & a {
@@ -45,6 +49,16 @@
 
   &--post {
    // background: url('../img/post.svg') no-repeat center;
+  }
+}
+
+@media #{$mobile-widths} {
+  .sub-menu__list {
+    display: flex;
+
+    & li:first-child {
+      margin-right: 50px;
+    }
   }
 }
 
