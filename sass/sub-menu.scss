@@ -1,0 +1,50 @@
+#sub-menu {
+  position: relative;
+  order: 1;
+}
+
+.sub-menu__list {
+  @include reset-ul;
+}
+
+.sub-menu__social {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  font-size: 0;
+
+  & a {
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    display: block;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.sub-menu__link {
+  color: $text-white;
+  text-decoration: none;
+
+  &--tel {
+    font-size: 27px;
+    font-family: "Bender-Bold";
+  }
+
+  &--vk {
+    //background: url('../img/toggle-menu.svg') no-repeat center;
+  }
+
+  &--yb {
+
+  }
+
+  &--post {
+   // background: url('../img/post.svg') no-repeat center;
+  }
+}
+

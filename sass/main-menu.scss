@@ -1,0 +1,112 @@
+#menu {
+  order: 2;
+}
+
+.main-menu {
+  position: relative;
+  padding: 20px 0 0;
+  top: 0;
+  width: 100%;
+  order: 2;
+  list-style: none;
+  z-index: 999;
+  @include reset-ul;
+
+  & li {
+    border: solid 1px $white;
+    border-bottom: solid 1px #292929;
+    background: $white;
+
+    &:hover {
+      background: #292929;
+    }
+
+  }
+
+  & a {
+    padding: 15px 0 15px 30px;
+    display: block;
+    font-size: 26px;
+    text-decoration: none;
+    font-family: "Bender";
+    color: $text-black;
+    cursor: pointer;
+
+    &:hover {
+      color: $main_yellow;
+    }
+  }
+}
+
+
+.menu-toggle {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 40px;
+  height: 30px;
+  border: none;
+  background: url('../img/toggle-menu.svg') no-repeat center;
+  z-index: 1001;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 1000px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-menu {
+    padding: 0;
+    position: initial;
+    display: flex;
+    text-transform: uppercase;
+
+    & li {
+      background: none;
+      border: none;
+
+      &:hover {
+        background: none;
+        border: none;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    & a {
+      font-size: 34px;
+      letter-spacing: 1px;
+      color: $text-white;
+      cursor: pointer;
+
+      &:hover {
+        color: $main_yellow;
+      }
+    }
+  }
+}
+
+@media (min-width: 1080px) {
+  .main-menu {
+
+    & a {
+      padding: 15px 0 15px 30px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-menu {
+
+    & a {
+      padding: 15px 0 15px 20px;
+    }
+  }
+}
+

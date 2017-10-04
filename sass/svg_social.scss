@@ -1,0 +1,45 @@
+.bg {
+  fill: none;
+}
+
+.post_card {
+  fill: $white;
+}
+
+.svg_post_card:hover {
+  .post_card {
+    fill: $black;
+  }
+
+  .bg {
+    fill: $main_yellow;
+  }
+}
+
+.youtube {
+  fill: $white;
+}
+
+.svg_youtube:hover {
+  .bg {
+    fill: $main_yellow;
+  }
+
+  .youtube {
+    fill: $black;
+  }
+}
+
+.vk {
+  fill: $white;
+}
+
+.svg_vk:hover {
+  .bg {
+    fill: $main_yellow;
+  }
+
+  .vk {
+    fill: $black;
+  }
+}

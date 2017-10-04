@@ -40,11 +40,11 @@ gulp.task("style", function() {
     .pipe(server.reload({stream: true}));
 });
 
-gulp.task("scripts", function() {
-  return gulp.src("js/*.js")
+/*gulp.task("scripts", function() {
+  return gulp.src("js/!*.js")
     .pipe(uglify())
     .pipe(gulp.dest("build/js"));
-});
+});*/
 
 gulp.task("symbols", function() {
   return gulp.src("build/img/icons/*.svg")
@@ -71,7 +71,7 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("js/**/*.js", ["scripts"]);
+  //gulp.watch("js/**/*.js", ["scripts"]);
   gulp.watch("build/js/**/*.js").on("change", server.reload);
   gulp.watch("*.html", ["copyhtml"]);
   gulp.watch("build/*.html").on("change", server.reload);
@@ -106,7 +106,7 @@ gulp.task("build", function(fn) {
     "style",
     "images",
     "symbols",
-    "scripts",
+    //"scripts",
     fn
   );
 });
